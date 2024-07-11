@@ -16,10 +16,10 @@ export default class HelloWorld extends LightningElement {
     sum2 = 2
 
     get total()
-    { return this.sum1 + sum2 }
+    { return this.sum1 + this.sum2 }
 
     get firstuser()
-    { return user[0] }
+    { return this.user[0] }
 
     trackHandler(event) {
         this.address.city = event.target.value
