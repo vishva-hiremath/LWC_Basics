@@ -9,7 +9,17 @@ export default class HelloWorld extends LightningElement {
         "city": "New York",
         "state": "New York",
         "country": "USA"
-    }
+        }
+    
+    user = ["a", "b", "c"]
+    sum1 = 1
+    sum2 = 2
+
+    get total()
+    { return this.sum1 + sum2 }
+
+    get firstuser()
+    { return user[0] }
 
     trackHandler(event) {
         this.address.city = event.target.value
