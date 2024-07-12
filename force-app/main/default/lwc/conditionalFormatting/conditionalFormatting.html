@@ -1,8 +1,8 @@
 <template>
-    <div>Info is hidden. Please click button to see info</div>
     <lightning-card title="HTML Directives">
         <div class="slds-m-around_medium">
             <lightning-button label="Show Info" onclick={showInfo}></lightning-button>
+            <div></div>
             <template lwc:if={isVisible}>Now the information is available.</template>
             <template lwc:else>The information is hidden. Please click the button.</template>
         </div>
