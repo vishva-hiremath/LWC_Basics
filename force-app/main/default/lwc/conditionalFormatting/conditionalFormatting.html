@@ -5,6 +5,10 @@
             <div></div>
             <template lwc:if={isVisible}>Now the information is available.</template>
             <template lwc:else>The information is hidden. Please click the button.</template>
+            <lightning-input type="text" label="type hello to see the message" onkeyup={handleChange}></lightning-input>
+            <template lwc:if={showdetails}>
+                You typed correctly!
+            </template>
         </div>
     </lightning-card>
 </template>
