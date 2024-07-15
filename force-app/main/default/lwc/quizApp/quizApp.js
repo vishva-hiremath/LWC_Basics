@@ -38,6 +38,19 @@ export default class QuizApp extends LightningElement {
                 d: "Berlin"
             },
             correctAnswer: "a"
+        },
+        {
+            
+            id: "Question4",
+            question: "What is the capital of India?",
+            answers:
+            {
+                a: "Rome",
+                b: "Venice",
+                c: "Milan",
+                d: "New Delhi"
+            },
+            correctAnswer: "d"
         }
     ]
     selected = {}
