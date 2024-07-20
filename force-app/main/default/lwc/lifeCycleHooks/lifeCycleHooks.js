@@ -1,6 +1,7 @@
 import { LightningElement } from 'lwc';
 
 export default class LifeCycleHooks extends LightningElement {
+isVisible = false
 
     constructor() {
         super()
@@ -15,5 +16,9 @@ export default class LifeCycleHooks extends LightningElement {
     name
     onChange(event) {
         this.name = event.target.value;
+    }
+
+    submitHandler() {
+        this.isVisible = !this.isVisible
     }
 }

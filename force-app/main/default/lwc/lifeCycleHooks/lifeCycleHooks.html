@@ -1,9 +1,19 @@
 <template>
     <lightning-card title="Parent Lifecycle Hook">
         <div class="slds-m-around_medium">
-            <c-child-life-cycle-hook></c-child-life-cycle-hook>
+            <template lwc:if={isVisible}>
+                <lightning-button type="brand" label="Remove Child" onclick={submitHandler} title="Remove Child"
+                    class="slds-m-around_small">Remove Child</lightning-button>
+            </template>
+            <template lwc:else>
+                <lightning-button type="brand" label="Show Child" onclick={submitHandler} title="Show Child"
+                    class="slds-m-around_small">Show Child</lightning-button>
+            </template>
+            
+            <template lwc:if={isVisible}>
+                <c-child-life-cycle-hook></c-child-life-cycle-hook>
+            </template>
         </div>
-        <lightning-input type="text" onkeyup={onChange}></lightning-input>
-        {name}
+    
     </lightning-card>
 </template>
