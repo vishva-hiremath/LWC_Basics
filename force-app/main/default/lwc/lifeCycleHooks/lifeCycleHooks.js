@@ -12,4 +12,8 @@ export default class LifeCycleHooks extends LightningElement {
     renderedCallback() {
         console.log("Parent renderedCallback called")
     }
+    name
+    onChange(event) {
+        this.name = event.target.value;
+    }
 }
