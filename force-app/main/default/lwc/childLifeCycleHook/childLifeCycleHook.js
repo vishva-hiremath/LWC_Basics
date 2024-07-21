@@ -8,6 +8,7 @@ export default class ChildLifeCycleHook extends LightningElement {
 
     connectedCallback() {
         console.log("Child connectedCallback called")
+        throw new ("Error Loading Child Component")
     }
 
     renderedCallback() {

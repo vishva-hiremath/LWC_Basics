@@ -21,4 +21,9 @@ isVisible = false
     submitHandler() {
         this.isVisible = !this.isVisible
     }
+
+    errorCallback(error, stack) {
+        console.log(error.message)
+        console.log("Stack" + stack)
+    }
 }
