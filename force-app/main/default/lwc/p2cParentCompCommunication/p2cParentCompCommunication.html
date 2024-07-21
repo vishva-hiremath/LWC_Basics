@@ -1,0 +1,14 @@
+<template>
+    <c-p2c-child-comp-communication message="Hurray I am from Child" number=100 is-valid=false
+        title-heading="Parent to Child Communication"></c-p2c-child-comp-communication>
+    <div class="slds-m-margin-bottom"></div>
+    <c-p2c-carousel-comp carousel-details={carouselData}></c-p2c-carousel-comp>
+    <div class="slds-m-margin-bottom"></div>
+    <lightning-card title={titleHeading}>
+        <div class="slds-m-around_medium">
+            <lightning-input type="number" name="input1" label="Enter a percentage" value={percentage}
+                onkeyup={changeHandler}></lightning-input>
+            <c-p2c-progress-bar-comp progress-value={percentage}></c-p2c-progress-bar-comp>
+        </div>
+    </lightning-card>
+</template>
