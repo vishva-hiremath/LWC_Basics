@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Navigation Item">
+        <div class="slds-var-m-around_medium">
+            <template lwc:if={result}>
+                <div>Developer Name - {result.developerName}</div>
+                <div>Object Api Name - {result.objectApiName}</div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
